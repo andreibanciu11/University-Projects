@@ -1,0 +1,17 @@
+﻿  App.cpp
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\SortedSet.h(9,1): warning C4005: 'NULL_TELEM': macro redefinition
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\DynamicArray.h(2): message : see previous definition of 'NULL_TELEM'
+  ExtendedTest.cpp
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\SortedSet.h(9,1): warning C4005: 'NULL_TELEM': macro redefinition
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\DynamicArray.h(2): message : see previous definition of 'NULL_TELEM'
+  ShortTest.cpp
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\SortedSet.h(9,1): warning C4005: 'NULL_TELEM': macro redefinition
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\DynamicArray.h(2): message : see previous definition of 'NULL_TELEM'
+  SortedSet.cpp
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\SortedSet.h(9,1): warning C4005: 'NULL_TELEM': macro redefinition
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\DynamicArray.h(2): message : see previous definition of 'NULL_TELEM'
+  SortedSetIterator.cpp
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\SortedSet.h(9,1): warning C4005: 'NULL_TELEM': macro redefinition
+C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\DynamicArray.h(2): message : see previous definition of 'NULL_TELEM'
+  Generating Code...
+  SortedSet.vcxproj -> C:\Andrei\Facultate\Sem 2\Structuri de date si algoritmi\Homeworks\SortedSet\x64\Debug\SortedSet.exe
