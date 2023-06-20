@@ -1,0 +1,11 @@
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\bin\Debug\Practic.exe.config
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\bin\Debug\Practic.exe
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\bin\Debug\Practic.pdb
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\obj\Debug\Practic.csproj.AssemblyReference.cache
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\obj\Debug\Practic.csproj.SuggestedBindingRedirects.cache
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\obj\Debug\Practic.Form1.resources
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\obj\Debug\Practic.Properties.Resources.resources
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\obj\Debug\Practic.csproj.GenerateResource.cache
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\obj\Debug\Practic.csproj.CoreCompileInputs.cache
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\obj\Debug\Practic.exe
+C:\Andrei\Facultate\Sem 4\DBMS\Practic\Practic\obj\Debug\Practic.pdb
