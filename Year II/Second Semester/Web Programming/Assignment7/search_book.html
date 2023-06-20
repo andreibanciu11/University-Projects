@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* style the container */
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px 0 30px 0;
+        }
+
+        /* style inputs and link buttons */
+        input,
+        .btn {
+            width: 50%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            margin: 5px 0;
+            opacity: 0.85;
+            display: inline-block;
+            font-size: 17px;
+            line-height: 20px;
+            text-decoration: none; /* remove underline from anchors */
+        }
+
+            input:hover,
+            .btn:hover {
+                opacity: 1;
+            }
+
+            /* style the submit button */
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+
+                input[type=submit]:hover {
+                    background-color: #45a049;
+                }
+
+        /* style the main menu button */
+        .main-menu-btn {
+            width: auto;
+            background-color: #ddd;
+            color: #000;
+            margin-top: 10px;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+
+            .main-menu-btn:hover {
+                background-color: #ccc;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Search Book in library</h2>
+        <div class="row">
+            <div class="col">
+                <input id="inputFilterGenre" type="text" name="genre" placeholder="Genre" style="width: 50%" required>
+                <button onclick="getFilterGenre()" style="width: 50%; background-color: red; height: 50px; color: white;">Search the existing books by genre</button>
+            </div>
+        </div>
+        <div id="bookList"></div>
+        <button onclick="redirectToMainMenu()" class="main-menu-btn">Go to Main Menu</button>
+    </div>
+
+    <script>
+        // Set the filter input value if available in session storage
+        document.getElementById("inputFilterGenre").value = sessionStorage.getItem("previousFilter") || "";
+
+        function getFilterGenre() {
+            var genre = document.getElementById("inputFilterGenre").value;
+
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById("bookList").innerHTML = xhr.responseText;
+
+                        // Store the current filter value in session storage
+                        sessionStorage.setItem("previousFilter", genre);
+                    } else {
+                        alert("There was an error retrieving the book list.");
+                    }
+                }
+            };
+
+            xhr.open("GET", "search_book.php?genre=" + genre, true);
+            xhr.send();
+        }
+
+        function redirectToMainMenu() {
+            window.location.href = "main_menu.html";
+        }
+    </script>
+</body>
+</html>

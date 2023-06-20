@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* style the container */
+        .container {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px 0 30px 0;
+            text-align: center;
+        }
+
+        /* style the menu buttons */
+        .menu-btn {
+            width: 200px;
+            height: 40px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .menu-btn:hover {
+                background-color: #45a049;
+            }
+
+        /* style the logout button */
+        .logout-btn {
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+            background-color: #f44336;
+            color: white;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            .logout-btn:hover {
+                background-color: #d32f2f;
+            }
+
+        /* style the book list */
+        .book-list {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+            .book-list table {
+                width: 80%;
+                margin: 0 auto;
+                border-collapse: collapse;
+            }
+
+                .book-list table th,
+                .book-list table td {
+                    padding: 8px;
+                    border: 1px solid #ddd;
+                }
+
+                .book-list table th {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Main Menu</h1>
+        <button class="menu-btn" onclick="location.href='/Assignment7/add_book.html'">Add Book</button>
+        <button class="menu-btn" onclick="location.href='/Assignment7/remove_book.html'">Remove Book</button>
+        <button class="menu-btn" onclick="location.href='/Assignment7/update_book.html'">Update Book</button>
+        <button class="menu-btn" onclick="location.href='/Assignment7/search_book.html'">Search Book</button>
+        <button class="logout-btn" onclick="location.href='/Assignment7/logout.php'">Logout</button>
+        <h1>Books for current user</h1>
+        <div class="book-list" id="bookList"></div>
+    </div>
+
+    <script>
+        // Get books for the current user using AJAX
+        function getBooksForCurrentUser() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById("bookList").innerHTML = xhr.responseText;
+                    } else {
+                        alert("There was an error retrieving the book list.");
+                    }
+                }
+            };
+
+            xhr.open("GET", "getBooks.php", true);
+            xhr.send();
+        }
+
+        // Call the function to get books for the current user on page load
+        window.onload = getBooksForCurrentUser;
+    </script>
+</body>
+</html>
