@@ -1,0 +1,8 @@
+aaa;open;3
+task7;closed;3
+this a task2;closed;1
+this a task3;closed;2
+task6;closed;2
+task5;closed;3
+this a task4;closed;2
+this a task1;closed;1
