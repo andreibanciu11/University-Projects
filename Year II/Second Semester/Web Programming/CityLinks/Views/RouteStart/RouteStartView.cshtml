@@ -1,0 +1,64 @@
+﻿@using CityLinks.Models
+@model List<City>
+@{
+    ViewBag.Title = "RouteStartView";
+}
+
+<head>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="~/Content/style.css">
+    <title>Personal Library - Main</title>
+    <style>
+        html, body {
+            height: 650px;
+            width: 99%;
+            align-content: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+            table th,
+            table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+
+            table th {
+                background-color: #f2f2f2;
+            }
+    </style>
+</head>
+
+<h3>These are all the cities</h3>
+
+@if (Model != null && Model.Count > 0)
+{
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>County</th>
+        </tr>
+        @foreach (var city in Model)
+        {
+            <tr>
+                <td>@city.Name</td>
+                <td>@city.County</td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>No cities found.</p>
+}
+
+<form method="POST" action="/RouteStart/RouteStart" style="display: flex; flex-direction: column; width: 30%">
+    Name: <input type="text" id="name" name="name">
+    County: <input type="text" id="county" name="county">
+    <input type="submit" value="Select departure city" name="selectCity">
+</form>
