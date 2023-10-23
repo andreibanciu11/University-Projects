@@ -1,0 +1,47 @@
+program ::= "int main {" stmtlist "return 0;}" 
+
+stmtlist ::= stmt | stmt stmtlist
+
+stmt ::= var_dec
+        | assignment_stmt
+        | if_stmt
+        | while_stmt
+        | for_stmt
+        | cout_stmt
+        | cin_stmt
+        | return_stmt
+        | compound_stmt
+
+var_dec ::= type declist ";"
+
+declist ::= identifier_list [("," type identifier_list)]
+
+type ::= "int" | "string" | "char"
+
+identifier_list ::= identifier | identifier "," identifier_list
+
+assignment_stmt ::= identifier "=" expression ";"
+
+if_stmt ::= "if" "(" condition ")" stmt ["else" stmt]
+
+while_stmt ::= "while" "(" condition ")" stmt
+
+for_stmt ::= "for" "(" assignment_stmt ";" condition ";" assignment_stmt ")" stmt
+
+cout_stmt ::= "cout" "<<" expression {"<<" expression} ";"
+
+cin_stmt ::= "cin" ">>" identifier {">>" identifier} ";"
+
+return_stmt ::= "return" expression ";"
+
+compound_stmt ::= "{" stmtlist "}"
+
+condition ::= expression relational_operator expression
+
+relational_operator ::= "==" | "!=" | "<" | ">" | "<=" | ">="
+
+expression ::= term | term "+" expression | term "-" expression
+
+term ::= factor | factor "*" term | factor "/" term
+
+factor ::= identifier | int_const | char_const | string_const | "(" expression ")"

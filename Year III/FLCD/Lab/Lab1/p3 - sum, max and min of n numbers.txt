@@ -1,0 +1,26 @@
+int main {
+    int n,i;
+    cin >> n;
+    int sum = 0;
+    int max_num = INT_MIN;
+    int min_num = INT_MAX;
+
+    for (i = 0; i < n; i++) {
+        int num;
+        cin >> num;
+
+        sum += num;
+
+        if (num > max_num) {
+            max_num = num;
+        }
+
+        if (num < min_num) {
+            min_num = num;
+        }
+    }
+
+    cout << "Sum: " << sum << "Maximum: " << max_num << "Minimum: " << min_num;
+
+    return 0;
+}

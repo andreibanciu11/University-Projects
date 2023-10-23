@@ -1,0 +1,22 @@
+Alphabet of the language:
+		-uppercase and lowercasem letters of the english alphabet: A-Z, a-z
+		-digits: 0-9
+		-underscore '_'
+	1. symbols
+		special_character = "+" | "-" | "*" | "/" | "%" | "(" | ")" | "[" | "]" | "{" | "}" | ":" | ";" | "," how to write this ?
+		relation_character =  "!" | "&&" | "!=" | ">" | "<" | ">=" | "<=" | "==" | "=" | ">>" | "||" how to write this ?
+		reserved words: int, string, char, if, else, while, for, cout, cin, return, main
+	
+	2. identifiers:
+		identifier = ("_"|letter)|{letter|digit|"_"}
+		letter = "A"|"B"|"C"|...|"Z"|"a"|"b"|"c"|...|"z"
+		digit = "0"|"1"|...|"9"
+		not_zero_digit = "1"|"2"|...|"9"
+
+	3. constants
+		int_const = "0"|["-"] not_zero_digit{digit}
+		char = letter|digit|special_character|relation_character
+		string = {char}
+
+		char_const = "'"char"'"
+		string_const = "'"string"'"

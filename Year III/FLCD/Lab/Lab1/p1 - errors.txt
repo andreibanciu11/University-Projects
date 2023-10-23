@@ -1,0 +1,27 @@
+int main {
+    int 1a, b, c;
+    cin >> a >> b >> c;
+
+    int max_num, min_num;
+
+    max_num = a;
+    min_num = a;
+
+    if (b > max_num) {
+        max_num = b;
+    } else if (b < min_num) {
+        min_num = b;
+    }
+
+    if (c > max_num) {
+        max_num = c;
+    } else if (c < min_num) {
+        min_num = c;
+    }
+
+    cout << "Maximum: " << max_num << "Minimum: " << min_num;
+
+    return 0;
+
+1- naming of first variable, must not start with digit
+2- missing '}' at the end of main function
