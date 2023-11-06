@@ -1,0 +1,1 @@
+github link for finite automaton: https://github.com/andreibanciu11/University-Projects/tree/main/Year%20III/FLCD/Lab/Lab4/Finite%20Automaton
