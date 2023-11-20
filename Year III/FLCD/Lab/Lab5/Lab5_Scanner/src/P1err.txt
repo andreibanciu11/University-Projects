@@ -1,0 +1,26 @@
+int main {
+a=-4-2;
+    int a, b, c;
+    cin >> a >> b >> c;
+
+    int max_num, min_num;
+
+    max_num = a;
+    min_num = a;
+
+    if (b > max_num) {
+        max_num = b;
+    } else if (b < min_num) {
+        min_num = b;
+    }
+
+    if (c > max_num) {
+        max_num = c;
+    } else if (c < min_num) {
+        min_num = c;
+    }
+
+    cout << "Maximum:  << max_num << "Minimum: " << min_num;
+
+    return 0;
+}

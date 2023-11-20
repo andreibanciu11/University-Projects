@@ -1,0 +1,31 @@
+Bucket 4: Pair{key=>>, value=8}
+Bucket 12: Pair{key=INT_MAX, value=15}
+Bucket 17: Pair{key=min_num, value=14}
+Bucket 17: Pair{key=for, value=16}
+Bucket 4: Pair{key=cin, value=7}
+Bucket 10: Pair{key=INT_MIN, value=13}
+Bucket 1: Pair{key=main, value=1}
+Bucket 2: Pair{key=>, value=23}
+Bucket 1: Pair{key==, value=10}
+Bucket 0: Pair{key=<, value=18}
+Bucket 19: Pair{key=;, value=6}
+Bucket 6: Pair{key=num, value=21}
+Bucket 8: Pair{key="Minimum: ", value=29}
+Bucket 8: Pair{key=0, value=11}
+Bucket 4: Pair{key=,, value=4}
+Bucket 3: Pair{key=+, value=19}
+Bucket 11: Pair{key=sum, value=9}
+Bucket 5: Pair{key=}, value=24}
+Bucket 1: Pair{key=), value=20}
+Bucket 3: Pair{key={, value=2}
+Bucket 0: Pair{key=(, value=17}
+Bucket 17: Pair{key=if, value=22}
+Bucket 10: Pair{key=n, value=3}
+Bucket 4: Pair{key=return, value=30}
+Bucket 2: Pair{key="Maximum: ", value=28}
+Bucket 5: Pair{key=i, value=5}
+Bucket 19: Pair{key=max_num, value=12}
+Bucket 11: Pair{key=int, value=0}
+Bucket 3: Pair{key=cout, value=25}
+Bucket 0: Pair{key=<<, value=26}
+Bucket 7: Pair{key="Sum: ", value=27}
